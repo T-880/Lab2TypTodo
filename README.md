@@ -54,4 +54,4 @@ Klick på "Redigera" öppnar ett prompt-fönster där användaren kan uppdatera 
 Alla ändringar sparas automatiskt i LocalStorage.
 
 **Webbplats:**  
-https://t-880.github.io/LabTyp2Todo/
+https://t-880.github.io/Lab2TypTodo/
