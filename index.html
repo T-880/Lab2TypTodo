@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Att-Göra-App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Att-Göra-App</h1>
+
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Skriv vad du vill göra..." required>
+      <select id="priority-select" required>
+        <option value="1">Prioritet 1 (Viktigast)</option>
+        <option value="2">Prioritet 2</option>
+        <option value="3">Prioritet 3 (Mindre viktig)</option>
+      </select>
+      <button type="submit">Lägg till</button>
+    </form>
+
+    <button id="clear-todos-btn">Rensa hela listan</button>
+
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

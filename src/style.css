@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  flex: 1 1 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#clear-todos-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #dc3545;
+}
+
+#clear-todos-btn:hover {
+  background-color: #a71d2a;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  text-align: center;
+}
+
+li button {
+  margin: 0 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #1e7e34;
+}
+
+li button.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+li button.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"],
+  select,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
